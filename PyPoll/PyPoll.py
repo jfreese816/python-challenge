@@ -41,12 +41,12 @@ with open( data_path, newline = "") as csvfile:
 # Compile the election results
 results = []
 
-results.append( "Election Results\n-------------------------")
-results.append( f"\nTotal Votes: {total_votes}\n-------------------------")
+results.append( "Election Results\n")
+results.append( f"\nTotal Votes: {total_votes}\n")
 for x in range( len( candidates)):
     results.append( f"\n{candidates[x]}: {vote_percent[x]} ({vote_count[x]})")
-results.append( "\n-------------------------\n")
-results.append( f"Winner: {winning_candidate}\n-------------------------")
+results.append( "\n\n")
+results.append( f"Winner: {winning_candidate}\n")
 
 # Print the election results
 print( *results)

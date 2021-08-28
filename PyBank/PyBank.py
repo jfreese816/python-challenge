@@ -49,7 +49,7 @@ avg_change = sum( change) / len( change)
 # Store summary of analysis  as 'results'
 results = (
     f"Financial Analysis\n"
-    f"--------------------------------------------------\n"
+    f"\n"
     f"Total Months: {months}\n"
     f"Total: ${net_PL}\n"
     f"Average Change: ${avg_change:.2f}\n"
